@@ -1,0 +1,97 @@
+.trusted-section {
+    .trusted-content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .content-image {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            .image-position {
+                position: absolute;
+                bottom: -10px;
+                right: 30px;
+                background-color: #46ddb0;
+                padding: 20px;
+                color: white;
+
+                .position-title {
+                    h2 {
+                        font-weight: 900;
+                        font-size: 3rem;
+                    }
+                }
+
+                .position-year {
+                    p {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        .content-description {
+            .content-header {
+                p {
+                    font-size: 13px;
+                    color: #adb5bd;
+                }
+            }
+
+            .content-title {
+                h2 {
+                    font-size: 40px;
+                    font-weight: 900;
+                }
+            }
+
+            .content-text {
+                p {
+                    color: gray;
+                }
+            }
+
+            button {
+                background-color: black;
+
+                border: 3px solid white;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    border: 3px solid rgb(0, 0, 0);
+
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .trusted-content {
+        flex-direction: column !important;
+    }
+
+    .content-description {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .content-title {
+        h2 {
+            font-size: 25px !important;
+        }
+    }
+
+}
+

@@ -1,0 +1,86 @@
+.ship-section{
+    padding: 50px 0;
+    .ship-content{
+        display: flex;
+        flex-direction: column;
+        .content-title{
+            text-align: center;
+            p{
+                font-size: 13px;
+                color: #adb5bd;
+                font-weight: 700;
+            }
+            h2{
+                font-size: 40px;
+                font-weight: 900;
+            }
+        }
+        .content-cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            .ship-card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .card-image{
+
+                    max-width: 300px;
+                    max-height: 300px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .card-description{
+                    
+                    padding: 10px 0;
+                    gap: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    h3{
+                        font-size: 18px;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #ccc !important;
+                    }
+                    p{
+                        color: gray;
+                    }
+
+                    .social{
+                        display: flex;
+                        gap: 5px;
+                        .media{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            background-color: gray;
+                            width: 30px;
+                            height: 30px;
+                            i{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    .content-cards{
+        p{
+            width: 40%;
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+.detail-section{
+    .detail-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content-image{
+
+        }
+        .content-description{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .content-title{
+
+            }
+            .content-category{
+
+            }
+            .content-price{
+
+            }
+            .basket-btn{
+                button{
+                    
+                }
+            }
+        }
+    }
+}

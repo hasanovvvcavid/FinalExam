@@ -1,0 +1,73 @@
+.services-section {
+    .services-content {
+        .content-title {
+            text-align: center;
+
+            p {
+                font-size: 13px;
+                color: #adb5bd;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-size: 40px;
+                font-weight: 900;
+            }
+        }
+
+        .content-cards {
+            padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            .service-card {
+                color: #808080;
+                display: flex;
+                gap: 20px;
+                .card-image {
+                    i {
+                        margin-top: 7px;
+                        color: #f16821!important;
+                        font-size: 40px;
+                    }
+                }
+
+                .card-description {
+                    .card-title {
+                        h3{
+                            font-size: 20px;
+                        }
+                    }
+
+                    .card-text {}
+
+                    .card-learn {
+                        a {
+                            color: #f16821;
+
+                            &:hover{
+                                color: #ba470c;
+                                transition: 0.3s all ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 872px) {
+    .content-cards{
+        align-items: center !important;
+    }
+    .service-card{
+        width: 50%;
+
+        p{
+            width: 100%;
+        }
+    }
+
+}
